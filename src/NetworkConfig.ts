@@ -86,6 +86,37 @@ export const defaultTestnetNetworkConfig: NetworkConfig = {
     ],
 };
 
+// export const defaultTestnetNetworkConfig: NetworkConfig = {
+//     explorerUrl: 'https://explorer-01.dhealth.dev:82/',
+//     faucetUrl: 'http://faucet-preview.testnet.symboldev.network/',
+//     defaultNetworkType: 152,
+//     networkConfigurationDefaults: {
+//         maxMosaicDivisibility: 6,
+//         namespaceGracePeriodDuration: 86400,
+//         lockedFundsPerAggregate: '10000000',
+//         maxCosignatoriesPerAccount: 25,
+//         blockGenerationTargetTime: 30,
+//         maxNamespaceDepth: 3,
+//         maxMosaicDuration: 315360000,
+//         minNamespaceDuration: 2592000,
+//         maxNamespaceDuration: 157680000,
+//         maxTransactionsPerAggregate: 100,
+//         maxCosignedAccountsPerAccount: 25,
+//         maxMessageSize: 1024,
+//         maxMosaicAtomicUnits: 8999999999000000,
+//         currencyMosaicId: '5A4935C1D66E6AC4',
+//         harvestingMosaicId: '5A4935C1D66E6AC4',
+//         defaultDynamicFeeMultiplier: 100,
+//         epochAdjustment: 1616694977,
+//         totalChainImportance: 7842928625000000,
+//         generationHash: 'F1DE7701FF17DA20904565FA9753690A9990D3B00730A241FFFB7F60C2B5D638',
+//     },
+//     nodes: [
+//         { friendlyName: 'testnet-node-centiva-1', roles: 2, url: 'https://api-01.dhealth.dev:3001' },
+//         { friendlyName: 'testnet-node-centiva-2', roles: 2, url: 'https://api-02.dhealth.dev:3001' }
+//     ],
+// };
+
 export const defaultMainnetNetworkConfig: NetworkConfig = {
     explorerUrl: 'http://explorer.symbolblockchain.io/',
     faucetUrl: 'http://faucet.mainnet.symboldev.network/',
@@ -152,7 +183,7 @@ export const defaultMainnetNetworkConfig: NetworkConfig = {
 
 const defaultNetworkConfig: Record<number, NetworkConfig> = {
     152: defaultTestnetNetworkConfig,
-    104: defaultMainnetNetworkConfig,
+    104: defaultMainnetNetworkConfig
 };
 
 export const networkConfig = defaultNetworkConfig;

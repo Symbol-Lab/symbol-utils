@@ -49,3 +49,4 @@ Thumbs.db
 *.wmv
 
 lib/
+package-lock.json
